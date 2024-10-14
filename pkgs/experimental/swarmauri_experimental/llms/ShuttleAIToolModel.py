@@ -21,18 +21,18 @@ class ShuttleAIToolModel(LLMBase):
     api_key: str
     _client: Optional[requests.Session] = PrivateAttr(default=None)
     allowed_models: List[str] = [
-        # "claude-instant-1.1",
-        # "gemini-1.0-pro-latest",
-        # "gemini-1.5-pro-latest",
-        # "gpt-3.5-turbo-0125",
-        # "gpt-3.5-turbo-1106",
-        # "gpt-4-0125-preview",
-        # "gpt-4-0613",
-        # "gpt-4-1106-preview",
-        # "gpt-4-turbo-2024-04-09",
-        # "mistral-7b-instruct-v0.2",
+        "claude-instant-1.1",
+        "gemini-1.0-pro-latest",
+        "gemini-1.5-pro-latest",
+        "gpt-3.5-turbo-0125",
+        "gpt-3.5-turbo-1106",
+        "gpt-4-0125-preview",
+        "gpt-4-0613",
+        "gpt-4-1106-preview",
+        "gpt-4-turbo-2024-04-09",
+        "mistral-7b-instruct-v0.2",
         "shuttle-2-turbo",
-        # "wizardlm-2-8x22b",
+        "wizardlm-2-8x22b",
     ]
     name: str = "shuttle-2-turbo"
     type: Literal["ShuttleAIToolModel"] = "ShuttleAIToolModel"
